@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Todo from "./Todo";
 
+import "../stylesheet/todoApp.css"
+
 function TodoApp() {
-  const [title, setTitle] = useState("crea una tarea");
+  const [title, setTitle] = useState("");
   const [todos, setTodos] = useState([]);
 
   function handleChange(e) {
